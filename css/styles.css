@@ -1,0 +1,79 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .logo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .formation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    perspective: 600px;
+    animation: rotate 3s linear infinite;
+  }
+  
+  .shape {
+    width: 40px;
+    height: 40px;
+    background-color: #00aaff;
+    transform-style: preserve-3d;
+    animation: spin 3s linear infinite;
+  }
+  
+  .shape-1 {
+    transform: rotateX(0deg) rotateY(0deg) translateZ(75px);
+  }
+  
+  .shape-2 {
+    transform: rotateX(90deg) rotateY(90deg) translateZ(75px);
+  }
+  
+  .shape-3 {
+    transform: rotateX(90deg) rotateY(180deg) translateZ(75px);
+  }
+  
+  .shape-4 {
+    transform: rotateX(90deg) rotateY(270deg) translateZ(75px);
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .logo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
